@@ -11,7 +11,7 @@ unsigned long myChannelNumber = channelNumber;
 const char * myWriteAPIKey = "Writeapikey";
 int lastHumi , lastTemp;
 unsigned long send_time = 0, dht_time = 0;
-unsigned long dht_time_repeat = 3000, send_time_repeat = 15000;
+unsigned long dht_time_repeat = 3000, send_time_repeat = 15000;//time delay dht11 and thingspeak
 float h = 0;
 float t = 0;
 WiFiClient client;
