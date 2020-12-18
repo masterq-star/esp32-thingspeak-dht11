@@ -4,11 +4,11 @@
 #define DHTPIN 4
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
-const char *ssid =  "HTPro-T1";
-const char *pass =  "Ht88888888";
+const char *ssid =  "SSID";
+const char *pass =  "PASS";
 const char *server = "api.thingspeak.com";
-unsigned long myChannelNumber =1251955;
-const char * myWriteAPIKey = "BJ0SJ1C4MNOG8NJE";
+unsigned long myChannelNumber = channelNumber;
+const char * myWriteAPIKey = "Writeapikey";
 int lastHumi , lastTemp;
 unsigned long send_time = 0, dht_time = 0;
 unsigned long dht_time_repeat = 3000, send_time_repeat = 15000;
